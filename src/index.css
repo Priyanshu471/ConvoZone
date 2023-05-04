@@ -1,0 +1,207 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Input Style */
+.inputbox {
+  position: relative;
+  width: 300px;
+}
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: rgb(254, 254, 254);
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color: #000000;
+  letter-spacing: 00.05em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+  color: #000000;
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0, 75em;
+}
+
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 108%;
+  height: 2px;
+  background: #4e83f6fc;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i {
+  height: 44px;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Sign button */
+.signbtn {
+  font-weight: 600;
+  background-color: rgb(37 99 235);
+  color: #d1dff5;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.signbtn:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
+}
+
+/* Landing Page */
+.card {
+  position: relative;
+  top: 2em;
+  height: 6.5em;
+  /* background: white; */
+  transition: 0.4s ease-in-out;
+  border-radius: 15px;
+  /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px; */
+  overflow: hidden;
+}
+
+.heading {
+  position: relative;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-top: 1em;
+  padding-left: 1em;
+  transition: 0.4s ease-in-out;
+}
+
+.details {
+  position: relative;
+  color: black;
+  font-size: 0.8em;
+  padding-top: 1em;
+  padding-left: 2em;
+  transition: 0.4s ease-in-out;
+}
+
+.btn1 {
+  position: relative;
+  padding: 10px;
+  font-size: 17px;
+  width: 70%;
+  border: 2px solid transparent;
+  border-radius: 5em;
+  background-color: #1b77da;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: 0.2s;
+  left: 3em;
+  top: 2em;
+  transition: 0.4s ease-in-out;
+  font-weight: bold;
+}
+
+.btn1:hover {
+  background-color: transparent;
+  color: #1b77da;
+  border: 2px solid #1b77da;
+}
+
+.line {
+  position: absolute;
+  color: rgb(47, 47, 47);
+  top: 15em;
+  left: 9em;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.btn2 {
+  position: relative;
+  padding: 10px;
+  font-size: 17px;
+  width: 70%;
+  border: 2px solid transparent;
+  border-radius: 5em;
+  background-color: #f2f2f2;
+  color: #1b77da;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: 0.2s;
+  left: 3em;
+  top: 5em;
+  transition: 0.4s ease-in-out;
+  font-weight: bold;
+}
+
+.btn2:hover {
+  background-color: transparent;
+  color: #1b77da;
+  border: 2px solid #1b77da;
+}
+
+.card:hover {
+  height: 21.7em;
+  transform: translateY(1.25em);
+  border: 4px solid #3b82f6;
+}
+
+.card:hover .heading {
+  transform: translateY(0.5em) translateX(3em);
+}
+
+.card:hover .details {
+  transform: translateY(0.8em) translateX(0.2em);
+  transform: scale(1.1);
+}
+
+.clip-path {
+  border-radius: 19px;
+  background: #519ef5;
+  box-shadow: -20px 20px 43px #3f90bf, 20px -20px 43px #63a7ff;
+}
+.clip-path1 {
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: -2px 2px 60px #3b93ff, 20px -20px 43px #2273ac;
+}
+
+/* Background */
+.bg-theme {
+  background: #5183f5;
+}
+
+.bg-image {
+  background-image: url("./Pages/Background.png");
+  background-size: cover;
+}

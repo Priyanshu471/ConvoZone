@@ -1,0 +1,13 @@
+.sender
+{
+   flex-direction: row-reverse; 
+   .messagecontent{
+            align-items: flex-end;
+       p{
+           border-radius: 12px 12px 0px 12px;
+           background-color: rgb(203, 225, 245);
+           color: black;
+           
+        }
+    }
+}
