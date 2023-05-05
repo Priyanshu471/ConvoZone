@@ -2,9 +2,11 @@
 Welcome to the Chat App built with React, Firebase, and Tailwind! 
 This app allows users to sign up, sign in, and log out of their account. 
 They can also share messages, share images and search for other users.
-
 To get started, make sure you have the latest version of Node.js installed on your computer. 
 You can download it from the official website (https://nodejs.org).
+
+### Live
+https://convozone.netlify.app/
 
 # Installation 
 1.Clone the repository to your local machine.
