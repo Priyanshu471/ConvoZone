@@ -10,8 +10,11 @@ https://convozone.netlify.app/
 
 # Installation 
 1.Clone the repository to your local machine.
+
 2.Navigate to the project directory and run npm install to install all the required dependencies.
+
 3.Create a new Firebase project and add your Firebase configuration details to the firebase.js file. You can find these details in the Firebase console.
+
 4.Run npm start to start the development server.
 
 # Features
